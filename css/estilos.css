@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Yanone+Kaffeesatz&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+h1,h2, h3{
+font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+p{
+    font-family: 'open sans', sans-serif;
+}
+*{
+    box-sizing: border-box;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+}
+
+/* Estilos del icono */
+
+.fa-solid{
+    display:block;
+    height: 30px;
+    width: 30px;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    background:#8ecae6;
+    margin-left: auto;
+    cursor:pointer;
+    border-radius: 5px;
+    color:#fff;
+
+}
+
+/* Diseño del header */
+
+.contenedor{
+    position: relative;
+    height:100px;
+    background-color: #4E878C;
+    padding-top:20px;
+}
+
+.fa-solid{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.autor{
+    text-align: center;
+    color:#fff;
+    margin-bottom: 0;
+}
+.titulo{
+    text-align: center;
+    color:#fff;
+    
+}
+
+.banner{
+    background-color: #4E878C ;
+    width:50%;
+    height:50%;
+    margin: 0 auto;
+}
+header{
+    height: 200px;
+    background-color: #4E878C;
+}
+/* Diseño del menú */
+
+.menu{
+    list-style: none;
+    padding: 0;
+    margin:0;
+    }
+    .nav{
+        position: absolute;
+        top:40px;
+        left:-100%;
+        width:100%;
+        transition: 0.6s;
+    }
+    
+    a{
+        display: block;
+        padding: 20px;
+        background: #4E878C;
+        color:#fff;
+        text-decoration: none;
+    }
+    a:hover{
+        background: #fff;
+        color:#4E878C;
+    }
+
+    .mostrar{
+        left:0;
+    }
+    .link{
+        background:#fff;
+        color:#4E878C;
+    }
+    
+/* Diseño de la biografía */
+.bio{
+    text-align: center;
+    background-color:#FFEAEC;
+    height:600px;
+    padding: 20px;
+}
+.bio_titulo{
+    margin-top: 0;
+}
+.banner{
+   max-width: 100%;
+   height: auto;
+}
+
+/* Diseño de la sinopsis */
+.sinopsis{
+    text-align: center;
+    background-color: #FFEAEC;
+    padding:20px;
+    margin-top: 20px;
+}
+
+/* Diseño de la compra del libro */
+.compra{
+    background-color: #FFEAEC;
+}
+.compra_enlace{
+    background-color: #FFEAEC;
+    color:black;
+    text-align: center;
+    margin:0;
+    cursor: pointer;
+}
+
+.compra_titulo{
+    text-align: center;
+    padding: 20px;
+}
+.img_compra{
+    height: 50%;
+    width: 50%;
+    margin:10px auto;
+}
+.precio{
+    text-align: center;
+    margin-bottom: 0;
+}
+
+/* Diseño del footer */
+.footer{
+    background-color: #4E878C;
+    padding:20px;
+    margin-top: 20px;
+    position: relative;
+}
+.copyright{
+    color:#fff;
+    text-align: center;
+    margin-top: 70px;
+}
+.fa-brands{
+    display: inline-block;
+    color:#fff;
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+}
+.fa-instagram{
+    left: 75px;
+}
+.fa-facebook-f{
+    left: 130px;
+}
+.comentario{
+    margin-top: 70px;
+    color:#fff;
+    text-align: center;
+}
+
+
+/* ---------------------------------------Diseño responsive---------------------- */
+@media(min-width: 480px){.fa-instagram{
+   left:41% ;
+}
+.fa-facebook-f{
+left:51%;
+}
+.banner_img{
+    width: 50%;
+    height:50%;
+    margin: 0 auto;
+}
+.bio{
+    height: 100%;
+}
+}
+@media (min-width: 768px){
+    .banner_img{
+        width: 25%;
+        height: 25%;
+        margin: 0 auto;
+    }
+h1{
+font-size: 45px;
+}}
+
+@media (min-width:1024px)
+{h2{
+    font-size: 30px;
+}
+p{
+    font-size: 18px;
+}
+.header{
+    height: 320px;
+}
+.img_compra{
+    height: 25%;
+    width: 25%;
+}.bio{
+    margin-bottom: 60px;
+    width: 100%;
+}
+.bioo{
+    text-align:justify;
+    padding: 0 0 0 40px;
+    width: 50%;
+    margin-left: 90px;
+}
+.juan{
+    margin-bottom: 45px;
+}
+.sinopsis{
+    margin-bottom: 60px;
+    width:100%;
+}
+.sinopsis_content{
+    text-align: justify;
+    line-height: 1.6;
+    padding: 40px;
+}
+.compra{
+    margin-bottom: 60px;
+    width: 100%;
+}
+p{
+    letter-spacing: 0.5px;
+}
+.nav{   
+    width:auto;
+    position: absolute;
+    left: 29%;
+    top: 170%;
+
+}
+.menu{
+    display:flex;
+}
+
+.fa-solid{
+    display: none;
+}
+.banner_img{
+    position: absolute;
+    width:auto;
+    height:auto;
+    max-width: 35%;
+    max-height: 35%;
+    margin: 0 66%;
+    top:58%;
+    border-radius: 7px;
+    
+}
+.footer{
+    width: 100%;
+}
+.header{
+    width: 100%;
+}
+a{
+    font-size: 18px;
+}
+}
+
+
+
+
